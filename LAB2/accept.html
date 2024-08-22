@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #6c757d;
+            color: #fff;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            text-align: center;
+            margin: 0;
+            font-size: 28px;
+            letter-spacing: 1.5px;
+        }
+        header nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        header nav ul li {
+            margin: 0 10px;
+        }
+        header nav ul li a {
+            text-decoration: none;
+            color: #f8f9fa;
+            font-weight: 600;
+            padding: 5px 10px;
+            transition: background-color 0.3s;
+        }
+        header nav ul li a:hover {
+            background-color: #495057;
+            border-radius: 4px;
+        }
+
+        .details {
+            background-color: #fff;
+            margin: 30px auto;
+            padding: 25px;
+            max-width: 450px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .details label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+            color: #495057;
+        }
+        .details input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            font-size: 15px;
+            box-sizing: border-box;
+        }
+        .details button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 17px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .details button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>User Information</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#places">Places</a></li>
+                <li><a href="colleges.html">Colleges</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#trekking">Trekking</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="details">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+        
+        <label for="contact">Contact:</label>
+        <input type="tel" id="contact" placeholder="Enter your contact number">
+        
+        <label for="address">Address:</label>
+        <input type="text" id="address" placeholder="Enter your address">
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="Enter your age">
+
+        <button>Submit</button>
+    </div>
+</body>
+</html>
